@@ -16,7 +16,7 @@ Does NOT contain:
 """
 
 from schemas.state import ConversationState
-from schemas.agent_response import AgentResponse
+from schemas.AgentResponse import AgentResponse
 from enums.AgentAction import AgentAction
 
 from Orchestrator.ports import ExtractionServicePort, StateServicePort # temprory

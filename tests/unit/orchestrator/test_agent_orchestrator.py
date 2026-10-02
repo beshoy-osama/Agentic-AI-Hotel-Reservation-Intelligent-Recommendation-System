@@ -11,7 +11,7 @@ from pydantic import ValidationError
 from Orchestrator.AgentOrchestratorController import AgentOrchestratorController
 from enums.AgentAction import AgentAction
 from schemas.extraction import ExtractionResult
-from schemas.agent_response import AgentResponse
+from schemas.AgentResponse import AgentResponse
 from schemas.state import ConversationState
 
 from tests.fakes.fake_extraction_service import FakeExtractionService
