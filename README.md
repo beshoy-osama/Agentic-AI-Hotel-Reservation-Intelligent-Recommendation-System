@@ -80,7 +80,7 @@ Copy the `.env.example` file to `.env` inside the `src` directory:
 cp src/.env.example src/.env
 ```
 
-### 4. Run the Server
+### 5. Run the Server
 
 ```bash
 cd src
