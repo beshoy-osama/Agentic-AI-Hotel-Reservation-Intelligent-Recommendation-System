@@ -14,20 +14,48 @@ An intelligent hotel reservation and recommendation system powered by Agentic AI
 
 ```
 ├── src/
-│   ├── main.py                               
-│   ├── .env.example           
-│   ├── requirements.txt     
-│   ├── helpers/
-│   │   ├── __init__.py
-│   │   └── config.py           
-│   ├── enums/
-│   │   ├── __init__.py
-│   │   └── ResponseEnums.py   
-│   └── routes/
-│       ├── __init__.py
-│       └── health.py          
-├── postman/                    
-├── LICENSE                    
+│   ├── main.py                         # FastAPI application entry point
+│   ├── .env.example                    # Environment-variable template
+│   ├── requirements.txt                # Python dependencies
+│   ├── Orchestrator/                   # Agent processing pipeline
+│   │   ├── ActionSelector.py
+│   │   ├── AgentOrchestratorController.py
+│   │   ├── MissingFieldsPolicy.py
+│   │   ├── ports.py
+│   │   └── stubs.py
+│   ├── enums/                          # Shared enumerations
+│   │   ├── AgentAction.py
+│   │   └── ResponseEnums.py
+│   ├── helpers/                        # Application configuration helpers
+│   │   └── config.py
+│   ├── routes/                         # API route handlers
+│   │   ├── agent.py
+│   │   └── health.py
+│   └── schemas/                        # Request, response, and state models
+│       ├── ProcessRequest.py
+│       ├── AgentResponse.py
+│       ├── extraction.py
+│       ├── recommendation.py
+│       └── state.py
+├── tests/
+│   ├── fakes/                          # Test service implementations
+│   │   ├── fake_extraction_service.py
+│   │   └── fake_state_service.py
+│   └── unit/
+│       └── orchestrator/               # Orchestrator unit tests
+│           ├── test_action_selector.py
+│           ├── test_agent_orchestrator.py
+│           └── test_missing_fields_policy.py
+├── postman/                            # Postman collections and workspace globals
+│   ├── collections/
+│   │   └── Health-Check/
+│   │       ├── health.request.yaml
+│   │       └── AgentProcess/
+│   │           └── .resources/definition.yaml
+│   └── globals/workspace.globals.yaml
+├── pyproject.toml                      # Pytest configuration
+├── Banner.jpeg                         # Project banner
+├── LICENSE
 └── README.md
 ```
 
