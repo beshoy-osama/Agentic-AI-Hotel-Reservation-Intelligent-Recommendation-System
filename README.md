@@ -1,8 +1,12 @@
 # 🏨 Agentic AI Hotel Reservation & Intelligent Recommendation System
 
+<p align="center">
+  <img src="Banner.jpeg" alt="Project Banner" width="100%"/>
+</p>
+
 An intelligent hotel reservation and recommendation system powered by Agentic AI.
 
-> Graduation Project — Built with FastAPI & Python.
+> Graduation Project -- FCAI -- BSNU
 
 ---
 
@@ -10,21 +14,21 @@ An intelligent hotel reservation and recommendation system powered by Agentic AI
 
 ```
 ├── src/
-│   ├── main.py                 # Application entry point (FastAPI)
-│   ├── .env                    # Environment variables (not tracked by Git)
-│   ├── .env.example            # Environment variables template
-│   ├── requirements.txt        # Python dependencies
+│   ├── main.py               
+│   ├── .env                  
+│   ├── .env.example           
+│   ├── requirements.txt     
 │   ├── helpers/
 │   │   ├── __init__.py
-│   │   └── config.py           # Application settings (Pydantic Settings)
+│   │   └── config.py           
 │   ├── enums/
 │   │   ├── __init__.py
-│   │   └── ResponseEnums.py    # Response message constants
+│   │   └── ResponseEnums.py   
 │   └── routes/
 │       ├── __init__.py
-│       └── health.py           # Health check endpoint
-├── postman/                    # Postman collections for API testing
-├── LICENSE                     # Apache 2.0 License
+│       └── health.py          
+├── postman/                    
+├── LICENSE                    
 └── README.md
 ```
 
@@ -32,8 +36,8 @@ An intelligent hotel reservation and recommendation system powered by Agentic AI
 
 ## ⚙️ Prerequisites
 
-- **Python** 3.10+
-- **pip** (Python package manager)
+- **Miniconda** (or Anaconda) — [Download Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+- **Git**
 
 ---
 
@@ -46,25 +50,21 @@ git clone https://github.com/beshoy-osama/Agentic-AI-Hotel-Reservation-Intellige
 cd Agentic-AI-Hotel-Reservation-Intelligent-Recommendation-System
 ```
 
-### 2. Create a Virtual Environment
+### 2. Create a Conda Environment
 
 ```bash
-python -m venv venv
+conda create -n hotel-ai python=3.11.16 -y
 ```
 
-**Activate the virtual environment:**
+**Activate the environment:**
 
 - **Linux / macOS:**
   ```bash
-  source venv/bin/activate
+  conda activate hotel-ai
   ```
-- **Windows (PowerShell):**
-  ```powershell
-  .\venv\Scripts\Activate.ps1
-  ```
-- **Windows (CMD):**
+- **Windows:**
   ```cmd
-  venv\Scripts\activate.bat
+  conda activate hotel-ai
   ```
 
 ### 3. Install Dependencies
