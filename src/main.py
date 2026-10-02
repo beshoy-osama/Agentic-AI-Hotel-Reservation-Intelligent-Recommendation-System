@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from routes import health
+from routes import agent
 from helpers import get_settings
 
 
@@ -20,3 +21,4 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 app.include_router(health.health_router)
+app.include_router(agent.agent_router)
