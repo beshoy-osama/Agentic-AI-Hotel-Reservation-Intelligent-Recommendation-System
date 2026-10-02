@@ -14,8 +14,7 @@ An intelligent hotel reservation and recommendation system powered by Agentic AI
 
 ```
 ├── src/
-│   ├── main.py               
-│   ├── .env                  
+│   ├── main.py                               
 │   ├── .env.example           
 │   ├── requirements.txt     
 │   ├── helpers/
