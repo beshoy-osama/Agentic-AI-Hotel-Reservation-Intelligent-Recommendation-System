@@ -232,3 +232,6 @@ postman/environments/*
 
 # But allow a shared example environment
 !postman/environments/example.json
+
+# Ignore .pytest_cache/ directories in the postman folder
+/.pytest_cache/
